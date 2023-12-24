@@ -56,7 +56,7 @@ public class Ipchecker implements ModInitializer {
             };
 
             timer = new Timer("br.dev.tiagogb.ip-checker.timer");
-            long fiveMin = 1000 * 20;
+            long fiveMin = 1000 * 60 * 5;
             timer.scheduleAtFixedRate(checkIPTask, 0, fiveMin);
         });
 
